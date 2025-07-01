@@ -7,6 +7,8 @@ import { useEffect } from 'react';
 import { auth } from './Firebase.js';
 import {useDispatch, useSelector} from "react-redux"
 import { logIn, logOut, selectUser } from './app/features/counter/UserSlice.js';
+import ProfileScreen from './Screens/profileScreen.jsx';
+
 
 function App() {
   const user = useSelector(selectUser) 
@@ -28,7 +30,7 @@ function App() {
 
     })
     return unSubscribe    
-  },[])
+  },[dispatch])
   return (
     <Router>
       <Routes>
@@ -38,6 +40,7 @@ function App() {
         ) : (
           <>
             <Route path="/" element={<Homescreen />} />
+            <Route path='/profile' element={<ProfileScreen/>}/>
             <Route path="/about" element={<About />} />
             <Route path="/users" element={<Users />} />
           

@@ -1,10 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FaSearch, FaBell } from 'react-icons/fa';
-
+import { useDispatch } from 'react-redux';
+import { logOut } from '../app/features/counter/UserSlice';
+import { auth } from '../Firebase';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [show, setShow] = useState(false);
+  const dispatch = useDispatch();
   const dropdownRef = useRef();
+  const navigate = useNavigate();
 
   const transitionNavbar = () => {
     if (window.scrollY > 100) {
@@ -34,6 +39,7 @@ const Navbar = () => {
       {/* Left Nav */}
       <div className="flex items-center space-x-8 cursor-pointer">
         <img
+          onClick={() => navigate('/')}
           src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
           className="h-6"
           alt="Netflix Logo"
@@ -60,14 +66,28 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             alt="Profile"
           />
+
           {isOpen && (
             <div className="absolute right-0 mt-2 w-32 bg-black text-white border border-gray-700 rounded-md shadow-lg">
               <button
                 className="w-full text-left px-4 py-2 hover:bg-gray-800"
                 onClick={() => {
                   setIsOpen(false);
-                  alert("Logged out");
+                  navigate('/profile');
                 }}
+              >
+                Profile
+              </button>
+              <button
+                className="w-full text-left px-4 py-2 hover:bg-gray-800"
+                onClick={() => {
+                  auth.signOut()
+                    .then(() => {
+                      dispatch(logOut());
+                      navigate("/"); // Optional: redirect to home or login page
+                    });
+                }}
+
               >
                 Logout
               </button>
