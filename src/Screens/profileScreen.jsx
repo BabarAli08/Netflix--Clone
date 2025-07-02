@@ -82,12 +82,8 @@ export default function NetflixProfilePage() {
                   onChange={(e) => setEmail(e.target.value)}
                   className="flex-1 bg-gray-700 text-white px-4 py-3 rounded border-none outline-none focus:bg-gray-600"
                 />
-                <button
-                  onClick={() =>  {handleUpdate}   }
-
-                  className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded text-sm font-medium transition-colors" >
-                  Update
-                </button>
+                
+               
               </div>
             </div>
 
