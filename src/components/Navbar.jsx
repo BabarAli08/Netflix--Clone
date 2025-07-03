@@ -61,9 +61,9 @@ const Navbar = () => {
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6 font-light">
           {navLinks.map((link, i) => (
-
             <li
-              key={i} className="cursor-pointer hover:underline"
+              key={i}
+              className="cursor-pointer hover:underline"
               onClick={() => {
                 switch (link) {
                   case "Home":
@@ -87,10 +87,8 @@ const Navbar = () => {
                   default:
                     break;
                 }
-
               }}
             >
-
               {link}
             </li>
           ))}
@@ -147,20 +145,48 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Nav Menu */}
-      {mobileMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col px-6 py-4 space-y-3 md:hidden z-40">
-          {navLinks.map((link, i) => (
-            <span
-              key={i}
-              className="hover:underline cursor-pointer"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {link}
-            </span>
-          ))}
-        </div>
-      )}
+      {/* Mobile Nav Menu with animation */}
+      <div
+        className={`absolute top-16 left-0 w-full bg-black text-white flex flex-col px-6 py-4 space-y-3 md:hidden z-40 transition-all duration-300 ease-in-out transform ${
+          mobileMenuOpen
+            ? 'opacity-100 translate-y-0 scale-100'
+            : 'opacity-0 -translate-y-4 scale-95 pointer-events-none'
+        }`}
+      >
+        {navLinks.map((link, i) => (
+          <span
+            key={i}
+            className="hover:underline cursor-pointer"
+            onClick={() => {
+              setMobileMenuOpen(false);
+              switch (link) {
+                case "Home":
+                  navigate('/');
+                  break;
+                case "TV Shows":
+                  navigate('/tvshows');
+                  break;
+                case "Movies":
+                  navigate('/movies');
+                  break;
+                case "New & Popular":
+                  navigate('/new&popular');
+                  break;
+                case "My List":
+                  navigate('/mylist');
+                  break;
+                case "Browse by Languages":
+                  navigate('/browsebylanguage');
+                  break;
+                default:
+                  break;
+              }
+            }}
+          >
+            {link}
+          </span>
+        ))}
+      </div>
     </div>
   );
 };
