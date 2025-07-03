@@ -61,7 +61,36 @@ const Navbar = () => {
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6 font-light">
           {navLinks.map((link, i) => (
-            <li key={i} className="cursor-pointer hover:underline">
+
+            <li
+              key={i} className="cursor-pointer hover:underline"
+              onClick={() => {
+                switch (link) {
+                  case "Home":
+                    navigate('/');
+                    break;
+                  case "TV Shows":
+                    navigate('/tvshows');
+                    break;
+                  case "Movies":
+                    navigate('/movies');
+                    break;
+                  case "New & Popular":
+                    navigate('/new&popular');
+                    break;
+                  case "My List":
+                    navigate('/mylist');
+                    break;
+                  case "Browse by Languages":
+                    navigate('/browsebylanguage');
+                    break;
+                  default:
+                    break;
+                }
+
+              }}
+            >
+
               {link}
             </li>
           ))}

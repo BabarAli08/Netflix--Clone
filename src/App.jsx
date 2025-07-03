@@ -8,6 +8,13 @@ import { auth } from './Firebase.js';
 import {useDispatch, useSelector} from "react-redux"
 import { logIn, logOut, selectUser } from './app/features/counter/UserSlice.js';
 import ProfileScreen from './Screens/profileScreen.jsx';
+import Shows from './Screens/Shows.jsx';
+import Tvshows from './Screens/Tvshows.jsx';
+import Movies from './Screens/Movies.jsx';
+import Browsebylanguage from './Screens/Browsebylanguage.jsx';
+import MyList from './Screens/MyList.jsx';
+import NewAndPopular from './Screens/NewAndPopular.jsx';
+import Layout from './Screens/Layout.jsx';
 
 
 function App() {
@@ -38,15 +45,20 @@ function App() {
         {!user ? (
           <Route path="*" element={<LoginScreen />} />
         ) : (
-          <>
-            <Route path="/" element={<Homescreen />} />
-            <Route path='/profile' element={<ProfileScreen/>}/>
-            <Route path="/about" element={<About />} />
-            <Route path="/users" element={<Users />} />
-          
-            <Route path="*" element={<Navigate to="/" />} />
-          </>
-        )}
+      // Protected routes with Layout
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Homescreen />} />
+        <Route path="profile" element={<ProfileScreen />} />
+        <Route path="about" element={<About />} />
+        <Route path="users" element={<Users />} />
+        <Route path="tvshows" element={<Tvshows />} />
+        <Route path="movies" element={<Movies />} />
+        <Route path="browsebylanguage" element={<Browsebylanguage />} />
+        <Route path="mylist" element={<MyList />} />
+        <Route path="new&popular" element={<NewAndPopular />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Route>
+    )}
       </Routes>
     </Router>
   );
