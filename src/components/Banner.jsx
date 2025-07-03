@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from '../axios.js';
 import requests from '../Request.js';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
   const [movie, setMovie] = useState(null);
-
+  const navigate=useNavigate()
   useEffect(() => {
     async function fetchData() {
       try {
@@ -53,10 +54,14 @@ const Banner = () => {
         </p>
 
         <div className="flex flex-wrap gap-3">
-          <button className="bg-white text-black px-6 py-2 md:px-8 md:py-2.5 font-semibold rounded hover:bg-gray-200 transition duration-300 text-sm md:text-base">
+          <button 
+          onClick={()=>navigate('/movies')}
+          className="bg-white text-black px-6 py-2 md:px-8 md:py-2.5 font-semibold rounded hover:bg-gray-200 transition duration-300 text-sm md:text-base">
             ▶ Play
           </button>
-          <button className="bg-gray-700 bg-opacity-80 text-white px-6 py-2 md:px-8 md:py-2.5 font-semibold rounded hover:bg-gray-600 transition duration-300 text-sm md:text-base">
+          <button
+           onClick={()=>navigate('/mylist')}
+          className="bg-gray-700 bg-opacity-80 text-white px-6 py-2 md:px-8 md:py-2.5 font-semibold rounded hover:bg-gray-600 transition duration-300 text-sm md:text-base">
             + My List
           </button>
         </div>

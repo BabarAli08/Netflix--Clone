@@ -6,7 +6,7 @@ const Tvshows = () => {
   return (
     <>
     
-    <Shows title="This is the tv shows component" fetchURL={requests.fetchTvShows} />
+    <Shows title="Tv shows" fetchURL={requests.fetchTvShows} />
     </>
 
   )
