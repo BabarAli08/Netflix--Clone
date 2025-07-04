@@ -1,4 +1,4 @@
-# 🎬 Netflix Clone
+![image](https://github.com/user-attachments/assets/0ed9acdc-c828-454a-9a9f-145e053ce74a)# 🎬 Netflix Clone
 
 <div align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
@@ -45,7 +45,7 @@ This Netflix Clone is a modern, responsive web application that replicates the c
 - **High-Quality Posters** - Crisp movie imagery and thumbnails
 
 ### ❤️ Personal Features
-- **My List** - Add/remove movies from personal watchlist
+- **My List** - Add/remove movies from your watchlist
 - **Redux State Management** - Seamless state persistence
 - **Responsive Design** - Perfect experience across all devices
 
@@ -75,7 +75,7 @@ This Netflix Clone is a modern, responsive web application that replicates the c
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/netflix-clone.git
+git clone https://github.com/BabarAli08/Netflix--Clone.git
 cd netflix-clone
 ```
 
@@ -205,7 +205,8 @@ yarn test
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x400/FF0000/FFFFFF?text=Netflix+Clone+Screenshot" alt="Netflix Clone Screenshot" />
+  <img src="![image](https://github.com/user-attachments/assets/4b20bcb9-89bd-4c44-a268-9116258e9f3d)
+" alt="Netflix Clone Screenshot" />
   <p><em>Netflix Clone - Home Page</em></p>
 </div>
 
@@ -283,10 +284,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Babar Ali**
 
-- 🌐 **Portfolio**: [Your Portfolio URL]
-- 💼 **LinkedIn**: [Your LinkedIn Profile]
-- 🐙 **GitHub**: [Your GitHub Profile]
-- 📧 **Email**: [Your Email]
+- 💼 **LinkedIn**: https://www.linkedin.com/in/babar-ali-dev/
+- 🐙 **GitHub**: https://github.com/BabarAli08
+- 📧 **Email**: babaralidev08@gmail.com
 
 ---
 
@@ -299,9 +299,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help with the project, feel free to:
 
-- 🐛 **Report bugs** - [Create an issue](https://github.com/your-username/netflix-clone/issues)
-- 💡 **Request features** - [Create a feature request](https://github.com/your-username/netflix-clone/issues)
-- 💬 **Ask questions** - [Start a discussion](https://github.com/your-username/netflix-clone/discussions)
+- 🐛 **Report bugs** - [Create an issue](https://github.com/BabarAli08/netflix-clone/issues)
+- 💡 **Request features** - [Create a feature request](https://github.com/BabarAli08/netflix-clone/issues)
+- 💬 **Ask questions** - [Start a discussion](https://github.com/BabarAli08/netflix-clone/discussions)
 
 ---
 
