@@ -14,7 +14,7 @@
 </div>
 
 <div align="center">
-  <a href="https://netflix-clone-one-psi-44.vercel.app" target="_blank">
+  <a href="https://netflix-babar.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Live_Demo-FF0000?style=for-the-badge&logoColor=white" alt="Live Demo" />
   </a>
   <a href="#installation">
@@ -205,7 +205,8 @@ yarn test
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="![image](https://github.com/user-attachments/assets/4b20bcb9-89bd-4c44-a268-9116258e9f3d)
+  <img src="![image](https://github.com/user-attachments/assets/0f546eb1-bd79-47dd-a2e6-c0344031e6a4)
+
 " alt="Netflix Clone Screenshot" />
   <p><em>Netflix Clone - Home Page</em></p>
 </div>
