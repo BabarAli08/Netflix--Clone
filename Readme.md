@@ -205,8 +205,11 @@ yarn test
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="![image](https://github.com/user-attachments/assets/0f546eb1-bd79-47dd-a2e6-c0344031e6a4)
-
+  <img src="![image](https://github.com/user-attachments/assets/e6b9ef49-77a8-472a-bba7-15cced890de4)
+"
+  <img src="![image](https://github.com/user-attachments/assets/ff3e41a8-d690-41f1-8f37-ea42d8eabe3d)
+"
+  <img src="![image](https://github.com/user-attachments/assets/8383b48b-e767-4ca7-ac08-39f2228c58f7)
 " alt="Netflix Clone Screenshot" />
   <p><em>Netflix Clone - Home Page</em></p>
 </div>
