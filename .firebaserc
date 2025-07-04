@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "netflix-real-clone"
-  }
+    "default": "netflix-clone-build-e4a1a",
+    "default ": "netflix-clone-build-e4a1a"
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -1,6 +1,6 @@
 // firebase.js
 import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
+import { getAuth, EmailAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -16,9 +16,10 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Export Firestore and Auth
+// Get Auth and Firestore instances
 const db = getFirestore(app);
 const auth = getAuth(app);
 
-export { auth };
+// ✅ Export everything needed
+export { auth, EmailAuthProvider };
 export default db;

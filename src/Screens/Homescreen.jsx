@@ -7,7 +7,7 @@ import requests from '../Request'
 const Homescreen = () => {
   return (
     <>
-    <Navbar/>
+    
     <Banner/>
      <Row title="Netflix Originals" fetchURL={requests.fetchNetflixOriginals} isLargeRow/>
       <Row title="Action Movies" fetchURL={requests.fetchActionMovies}/>
